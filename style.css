@@ -38,19 +38,25 @@ header {
   padding-block-start: 68px;
   padding-inline-start: 80px;
   padding-inline-end: 80px;
-  margin-block-end: 160px;
   background-color: #edfbff;
   background-image: url(images/bg-hero-desktop.svg);
-  width: 1440px;
-  height: 721px;
+  max-width: 1440px;
+  min-height: 721px;
 }
-header img {
+/* header img {
   margin-right: 880px;
+} */
+div.flx {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between
 }
 .TryIt {
   text-decoration: none;
   background-color: #fff;
   width: 200px;
+  height: 48px;
   border-radius: 24px;
   font-size: 14px;
   line-height: 19px;
@@ -74,6 +80,12 @@ header p {
   color: #00252e;
   max-width: 520px;
 }
+
+header div.flx {
+  max-width: 1280px;
+  height: 48px;
+  margin-block-end:71px ;
+}
 header div {
   width: 536px;
   height: 233px;
@@ -96,6 +108,7 @@ header div {
 header div img {
   max-width: 680px;
 }
+
 section.flx {
   display: flex;
   flex-direction: row;
@@ -104,11 +117,12 @@ section.flx {
 
 /* MAIN */
 main {
-  margin-bottom: 344px;
+  margin-bottom: 304px;
+  padding-top: 160px;
 }
 main .container {
-  width: 1232px;
-  height: 440px;
+  max-width: 1232px;
+  min-height: 440px;
   padding-inline-start: 120px;
   border: 0px solid #979797;
   border-radius: 16px;
@@ -121,8 +135,8 @@ main section {
   padding-block-end: 40px;
 }
 main .container div {
-  width: 488px;
-  height: 139px;
+  max-width: 488px;
+  min-height: 139px;
   margin-inline-end: 168px;
 }
 
@@ -149,14 +163,16 @@ div.flxm {
 footer {
   position: relative;
   width: 1440px;
-  height: 418px;
+  min-height: 418px;
   background: #00252e;
 }
 footer .container {
-  margin: 0;
-  width: 1242px;
-  min-height: 210px;
+  /* margin: 0; */
+ max-width: 1440px;
+  min-height: 418px;
   padding: 144px 78px 64px 120px;
+  /* margin: 0px 78px 64px 120px ;
+  padding-top: 144px; */
 }
 footer .container ul {
   color: #ffffff;
@@ -181,7 +197,6 @@ footer .container ul {
   line-height: 60px;
   color: #00252e;
 }
-
 footer a {
   margin: 0;
   text-decoration: none;
@@ -203,6 +218,37 @@ footer a {
 }
 div.flxf {
   display: flex;
+  /* display: inline-flex; */
   flex-direction: row;
-  flex-shrink: 1;
+  
+  
 }
+footer div{
+  /* flex-shrink: 1; */
+  justify-content: center;
+  width: 100%;
+  align-items: center
+  ;
+}
+/* .foot{
+  flex-shrink: 1 ; width: 100%;
+} */
+footer img{
+  margin: 0;
+  background-color: #00252e;
+  margin-bottom: 32px;
+}
+.Copyright {
+height: 18px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #FFFFFF;
+  position: absolute;
+right: 0;
+top: 0; 
+height: 18px;
+width: 262px;
+} 
