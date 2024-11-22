@@ -46,8 +46,19 @@ header {
 div.flx {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  width: 100%;
+}
+section.flxh {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 54px;
+  column-gap: 54px;
+  flex-shrink: 1;
+  width: 100%;
 }
 .TryIt {
   text-decoration: none;
@@ -89,7 +100,7 @@ header div.flx {
 header div {
   width: 536px;
   height: 233px;
-  margin-inline-end: 54px;
+  /* margin-inline-end: 54px; */
 }
 .GetStart {
   text-decoration: none;
@@ -110,11 +121,6 @@ a.GetStart:hover {
 }
 header div img {
   max-width: 680px;
-}
-section.flx {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
 
 /* MAIN */
@@ -139,7 +145,6 @@ main section {
 main .container div {
   max-width: 488px;
   min-height: 139px;
-  margin-inline-end: 168px;
 }
 
 h2 {
@@ -158,6 +163,8 @@ div.flxm {
   display: flex;
   flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* FOOTER */
@@ -243,14 +250,13 @@ footer .Ready a {
   color: #ffffff;
 }
 .foot p {
-  margin-bottom:  17px;
+  margin-bottom: 17px;
   width: 379px;
 }
 div.flxf {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  column-gap: 130px;
+  justify-content: space-between;
 }
 ul li a {
   text-decoration: none;
@@ -260,7 +266,6 @@ ul li a {
   line-height: 27px;
   color: #ffffff;
 }
-
 footer img {
   margin: 0;
   background-color: #00252e;
@@ -278,13 +283,14 @@ li:hover {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
-.nav2 {
-  margin-right: 45px;
+.flxnav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 143px;
 }
-.socset img{
+.socset img {
   margin: 0;
 }
-
 div.flxsoo {
   display: flex;
   flex-direction: column;
@@ -299,9 +305,10 @@ footer.container img {
   display: flex;
   column-gap: 12px;
 }
-a {
+.socset ul li a {
   display: inline-block;
   width: 32px;
+  height: 32px;
   height: 32px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -316,7 +323,6 @@ a {
 .ins {
   background-image: url(./images/ins.png);
 }
-
 .fb:hover {
   background-image: url(./images/fb-h.png);
 }
@@ -324,11 +330,10 @@ a {
   background-image: url(./images/tw-h.png);
 }
 .ins:hover {
-  background-image: url(./images/ins-h.png); 
+  background-image: url(./images/ins-h.png);
 }
 
 span {
-  /* height: 18px; */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -336,9 +341,4 @@ span {
   line-height: 18px;
   color: #ffffff;
   text-align: right;
-  /* position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 262px;
-  transform: translateX(-100%) translateY(-100%); */
 }
