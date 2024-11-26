@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
 }
-html {
+/* html {
   background-color: #f2f2f2;
-}
+} */
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -23,6 +23,7 @@ html {
 body {
   max-width: 1440px;
   background-color: #fff;
+  margin-inline: auto;
 }
 .container {
   max-width: 1280px;
@@ -35,7 +36,7 @@ p {
   margin: 0;
 }
 header {
-  padding-block-start: 68px;
+  padding-block-start: 50px;
   padding-inline-start: 80px;
   padding-inline-end: 80px;
   background-color: #edfbff;
@@ -70,6 +71,7 @@ section.flxh {
   line-height: 19px;
   color: rgba(0, 37, 46, 1);
   padding: 13px 64px 16px 64px;
+box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
 }
 a.TryIt:hover {
   color: rgba(128, 142, 154, 1);
@@ -108,13 +110,19 @@ header div {
   line-height: 19px;
   text-align: center;
   color: #ffffff;
-  padding: 17px 69px 20px 70px;
+  /* padding: 17px 69px 20px 70px; */
   width: 280px;
   height: 56px;
-  left: 80px;
-  top: 518px;
+  /* left: 80px;
+  top: 518px; */
   background: rgba(255, 82, 193, 1);
   border-radius: 28px;
+box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+padding-inline: 5px;
 }
 a.GetStart:hover {
   background: #ff9adb;
