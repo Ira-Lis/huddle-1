@@ -21,7 +21,7 @@
   font-style: normal;
 }
 body {
-  max-width: 1440px;
+  max-width: 100%;
   background-color: #fff;
   margin-inline: auto;
 }
@@ -111,8 +111,7 @@ header div {
   text-align: center;
   color: #ffffff;
   /* padding: 17px 69px 20px 70px; */
-  width: 280px;
-  height: 56px;
+  
   /* left: 80px;
   top: 518px; */
   background: rgba(255, 82, 193, 1);
@@ -123,6 +122,8 @@ header div {
   align-content: center;
   justify-content: center;
   padding-inline: 5px;
+  width: 280px;
+  height: 56px;
   transition: 0.5s;
 }
 a.GetStart:hover {
@@ -221,23 +222,29 @@ footer .container ul {
 }
 
 footer .Ready a {
-  margin: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: center;
+  /* margin: 0; */
+  /* text-decoration: none; */
+  /* text-align: center; */
   color: #ffffff;
-  padding: 17px 69px 20px 70px;
-  width: 280px;
-  height: 56px;
+font-style: normal;
+font-size: 20px;
+line-height: 30px;
+  /* padding: 17px 69px 20px 70px; */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 52.86%;
-  bottom: 18.57%;
+  /* top: 52.86%;
+  bottom: 18.57%; */
   background: rgba(255, 82, 193, 1);
   box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
   border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-inline: 5px;
+  width: 400px;
+  height: 80px;
 }
 .mapa {
   background-image: url(./images/znak_mapa.png);
