@@ -28,7 +28,6 @@ body {
 .container {
   max-width: 1280px;
 }
-body,
 h1,
 h2,
 h3,
@@ -71,7 +70,8 @@ section.flxh {
   line-height: 19px;
   color: rgba(0, 37, 46, 1);
   padding: 13px 64px 16px 64px;
-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+  transition: 0.5s;
 }
 a.TryIt:hover {
   color: rgba(128, 142, 154, 1);
@@ -117,12 +117,13 @@ header div {
   top: 518px; */
   background: rgba(255, 82, 193, 1);
   border-radius: 28px;
-box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-justify-content: center;
-padding-inline: 5px;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-inline: 5px;
+  transition: 0.5s;
 }
 a.GetStart:hover {
   background: #ff9adb;
@@ -156,8 +157,10 @@ main .container div {
 }
 
 h2 {
-  padding-block-start: 150px;
   margin-block-end: 16px;
+}
+.v_contejner {
+  padding-block-start: 150px;
 }
 main p {
   font-family: "Open Sans";
@@ -214,6 +217,7 @@ footer .container ul {
   font-size: 32px;
   line-height: 60px;
   color: #00252e;
+  transition: 0.5s;
 }
 
 footer .Ready a {
@@ -245,11 +249,25 @@ footer .Ready a {
   background-image: url(./images/znak_tel.png);
   background-repeat: no-repeat;
   padding-inline-start: 40px;
+  text-decoration: none;
 }
 .mail {
   background-image: url(./images/znak_mail.png);
   background-repeat: no-repeat;
   padding-inline-start: 40px;
+  text-decoration: none;
+}
+.mail,
+.tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.verfl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
 }
 .foot {
   font-style: normal;
@@ -258,7 +276,7 @@ footer .Ready a {
   color: #ffffff;
 }
 .foot p {
-  margin-bottom: 17px;
+  /* margin-bottom: 17px; */
   width: 379px;
 }
 div.flxf {
@@ -317,19 +335,22 @@ footer.container img {
   display: inline-block;
   width: 32px;
   height: 32px;
-  height: 32px;
+  /* height: 32px; */
   background-repeat: no-repeat;
   background-position: center center;
   transition: 0.5s;
 }
 .fb {
   background-image: url(./images/fb.png);
+  text-indent: -9999px;
 }
 .tw {
   background-image: url(./images/tw.png);
+  text-indent: -9999px;
 }
 .ins {
   background-image: url(./images/ins.png);
+  text-indent: -9999px;
 }
 .fb:hover {
   background-image: url(./images/fb-h.png);
