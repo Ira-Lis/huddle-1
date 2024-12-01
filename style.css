@@ -21,6 +21,7 @@
   font-style: normal;
 }
 body {
+  margin: 0;
   max-width: 100%;
   background-color: #fff;
   margin-inline: auto;
@@ -183,8 +184,8 @@ div.flxm {
 
 footer {
   position: relative;
-  width: 1440px;
-  min-height: 418px;
+  /* width: 1440px; */
+  /* min-height: 418px; */
   background: #00252e;
 }
 footer .container {
